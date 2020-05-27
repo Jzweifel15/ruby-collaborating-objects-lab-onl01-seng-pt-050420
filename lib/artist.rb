@@ -32,16 +32,6 @@ class Artist
       new_artist = self.new(artist_name)
       return new_artist
     end
-    
-=begin
-    if self.all.find == artist_name
-      return artist_name
-    else
-      new_artist = Artist.new(artist_name)
-      @@all.push(new_artist)
-      return new_artist
-    end
-=end 
   
   end
   
