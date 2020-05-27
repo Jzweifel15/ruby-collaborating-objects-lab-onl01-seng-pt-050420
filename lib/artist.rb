@@ -24,6 +24,8 @@ class Artist
   end
   
   def self.find_or_create_by_name(artist_name)
+    
+  
     if self.all.find == artist_name
       return artist_name
     else
@@ -31,6 +33,8 @@ class Artist
       @@all.push(new_artist)
       return new_artist
     end
+  =end 
+  
   end
   
   def print_songs
