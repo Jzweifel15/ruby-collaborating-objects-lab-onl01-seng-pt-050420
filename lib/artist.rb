@@ -25,7 +25,15 @@ class Artist
   
   def self.find_or_create_by_name(artist_name)
     
-  
+    found = self.all.find {|artist| artist.name == artist_name}
+    if found
+      return found
+    else
+      new_artist = self.new(artist_name)
+      return new_artist
+    end
+    
+=begin
     if self.all.find == artist_name
       return artist_name
     else
@@ -33,7 +41,7 @@ class Artist
       @@all.push(new_artist)
       return new_artist
     end
-  =end 
+=end 
   
   end
   
